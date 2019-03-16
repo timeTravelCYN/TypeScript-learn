@@ -4,7 +4,9 @@
   "description": "TypeScript learn",
   "main": "./src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack --config ./build/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,17 @@
   "bugs": {
     "url": "https://github.com/timeTravelCYN/TypeScript-learn/issues"
   },
-  "homepage": "https://github.com/timeTravelCYN/TypeScript-learn#readme"
+  "homepage": "https://github.com/timeTravelCYN/TypeScript-learn#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^2.0.1",
+    "cross-env": "^5.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "ts-loader": "^5.3.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "typescript": "^3.3.3333"
+  }
 }
