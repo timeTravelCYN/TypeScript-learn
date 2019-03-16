@@ -1,0 +1,23 @@
+{
+  "name": "typescript-learn",
+  "version": "1.0.0",
+  "description": "TypeScript learn",
+  "main": "./src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timeTravelCYN/TypeScript-learn.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "cyn"
+  ],
+  "author": "cyn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timeTravelCYN/TypeScript-learn/issues"
+  },
+  "homepage": "https://github.com/timeTravelCYN/TypeScript-learn#readme"
+}
