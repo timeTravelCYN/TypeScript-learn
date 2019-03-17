@@ -1,3 +1,2 @@
- let num: number = 123
-
+import './example/basic-type'
  document.title = 'cyn';
