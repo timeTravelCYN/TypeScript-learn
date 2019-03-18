@@ -108,8 +108,10 @@ function getObject(obj: object): void {
 getObject({name: 'cyn'})
 
 // 类型断言
-const getLength = target => {
-  if (target.length || target.length === 0) {
-    return target.length
+const getLength = (target: string | number): number => {
+  if ((<string>target).length || (target as string).length === 0) {
+    return (<string>target).length;
+  } else {
+    return target.toString().length
   }
-}
+} 
